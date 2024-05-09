@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tiendev</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #212121; /* Manzara resmi buraya eklenecek */
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      max-width: 800px;
+      margin: 0 auto;
+      cursor:pointer;
+    }
+
+    .image-container img {
+      width: calc(33.33% - 10px); /* 3 resim yan yana */
+      filter: blur(5px); /* Resimleri ilk olarak bulanık yap */
+      transition: filter 0.3s ease; /* Geçiş efekti için */
+    }
+
+    .image-container img:hover {
+      filter: none; /* Resmin üstüne gelindiğinde bulanıklığı kaldır */
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <img src="412018510_872833504843063_6405254446251717519_n.jpg" alt="Resim 1">
+    <img src="414704639_872833578176389_5400456240711778101_n.jpg" alt="Resim 2">
+    <img src="414694830_872833494843064_2569480338380890409_n.jpg" alt="Resim 3">
+  </div>
+</body>
+</html>
